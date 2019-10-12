@@ -27,7 +27,7 @@
 <nav>
     <ul>
         <li tapmode="liActive" onclick=""><a class="home">首页</a></li>
-        <li tapmode="liActive" onclick=""><a class="nav1">消费管理</a></li>
+        <li tapmode="liActive" onclick="toCunsume();"><a class="nav1">消费管理</a></li>
         <li tapmode="liActive" onclick=""><a class="nav2">交易管理</a></li>
         <li tapmode="liActive" onclick=""><a class="nav3">用户管理</a></li>
         <li tapmode="liActive" onclick=""><a class="nav4">角色管理</a></li>
@@ -44,5 +44,12 @@ apiready = function () {
     });
     $api.fixStatusBar($api.dom('nav'));
 };
+function toCunsume(){
+     api.openWin({
+         name: '消费管理',
+         url: 'consume.html',
+
+     });
+ };
 </script>
 </html>
