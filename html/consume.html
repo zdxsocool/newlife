@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-  这里是测试字段。
+  这里是测试字段123213123。
   <div class="t1"></div>
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
@@ -24,8 +24,10 @@ apiready = function () {
         style: 'dark',
         color: '#000'
     });
+    var appId=api.appId;
+    var deviceModel = api.deviceModel; // 比如： iPhone 5
+    alert(deviceModel);
 };
-var appId=$api.appId;
-alert(appId);
+
 </script>
 </html>
